@@ -22,14 +22,14 @@ public class InitialsFilter implements Filter {
             return true;
         }
         String uName = name, uSurname = surname, uPatronymic = patronymic;
-        if (user.getName() != null) {
-            uName = user.getName();
+        if (user.name() != null) {
+            uName = user.name();
         }
-        if (user.getSurname() != null) {
-            uSurname = user.getSurname();
+        if (user.surname() != null) {
+            uSurname = user.surname();
         }
-        if (user.getPatronymic() != null) {
-            uPatronymic = user.getPatronymic();
+        if (user.patronymic() != null) {
+            uPatronymic = user.patronymic();
         }
 
         return Objects.equals(uName, name)

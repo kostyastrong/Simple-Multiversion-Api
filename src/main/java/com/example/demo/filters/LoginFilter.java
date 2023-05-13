@@ -14,7 +14,7 @@ public class LoginFilter implements Filter {
         if (login == null) {
             return true;
         }
-        return user.login.equals(login);
+        return user.login().equals(login);
     }
 
 }

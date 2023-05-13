@@ -17,12 +17,12 @@ public class AgeFilter implements Filter {
         if (lowerBound == null && upperBound == null) {
             return true;
         }
-        if (user.getAge() == null) {
+        if (user.age() == null) {
             return false;
         }
-        if (lowerBound != null && user.getAge() < lowerBound) {
+        if (lowerBound != null && user.age() < lowerBound) {
             return false;
         }
-        return upperBound == null || user.getAge() <= upperBound;
+        return upperBound == null || user.age() <= upperBound;
     }
 }

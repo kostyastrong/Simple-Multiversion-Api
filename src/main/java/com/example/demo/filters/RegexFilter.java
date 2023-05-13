@@ -16,6 +16,6 @@ public class RegexFilter implements Filter {
         if (pattern == null) {
             return true;
         }
-        return user.login.matches(pattern);
+        return user.login().matches(pattern);
     }
 }

@@ -1,17 +1,7 @@
 package com.example.demo.request;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import org.springframework.lang.Nullable;
+import jakarta.annotation.Nullable;
 
-// same as in v1
+public record OrderRequestV2(@Nullable String like, @Nullable String regex) {
 
-@Data
-@AllArgsConstructor
-public class OrderRequestV2 {
-    @Nullable
-    private String like;
-
-    @Nullable
-    private String _unused;
 }
