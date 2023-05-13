@@ -5,12 +5,7 @@ import lombok.Value;
 
 import java.util.List;
 
-@Value
-public class OrderResponseV2 {
 
-    @NotNull
-    List<String> logins;
+public record OrderResponseV2(@NotNull List<String> logins, @NotNull Integer numberOfUsers) {
 
-    @NotNull
-    Integer numberOfUsers;
 }

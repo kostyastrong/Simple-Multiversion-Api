@@ -5,9 +5,7 @@ import lombok.Value;
 
 import java.util.List;
 
-@Value
-public class OrderResponseV1 {
-    // ID заказа генерируется при его создании
-    @NotNull
-    List<String> logins;
+
+
+public record OrderResponseV1(@NotNull List<String> logins) {
 }

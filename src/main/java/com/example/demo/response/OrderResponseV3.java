@@ -5,18 +5,8 @@ import lombok.Value;
 
 import java.util.List;
 
-@Value
-public class OrderResponseV3 {
 
-    @NotNull
-    @Deprecated(forRemoval = true)
-    List<String> logins;
-
-    @NotNull
-    Integer numberOfUsers;
-
-    @NotNull
-    List<Initials> loginsV2;
-
+public record OrderResponseV3(@Deprecated(forRemoval = true) @NotNull List<String> logins,
+                              @NotNull Integer numberOfUsers, @NotNull List<Initials> loginsV2) {
 
 }
