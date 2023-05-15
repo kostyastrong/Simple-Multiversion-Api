@@ -16,5 +16,3 @@
 
 1. http://localhost:8080/v3/api-docs - OpenAPI спецификация в формате JSON
 2. http://localhost:8080/swagger-ui.html - UI со спецификацией# Small-Depricated-Api
-# Simple-Multiversion-Api
-# Simple-Multiversion-Api
